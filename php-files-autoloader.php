@@ -12,7 +12,6 @@
 $directories = [ 'classes', 'includes', 'directory3', 'otherdirectory' ];
 
 foreach( $directories as $dir ) {
-
 	$folder = dirname( __FILE__ ) . '/' . $dir . '/'; // Full path to each folder
 
 	// Get all files contained in folder
