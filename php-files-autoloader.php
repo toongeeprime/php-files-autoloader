@@ -9,10 +9,10 @@
 
 
 // The Directories Array:
-$directories = [ 'classes', 'includes', 'directory3', 'otherdirectory' ];
+$directories = [ 'inits', 'includes', 'directory3', 'otherdirectory' ];
 
 foreach( $directories as $dir ) {
-	$folder = dirname( __FILE__ ) . '/' . $dir . '/'; // Full path to each folder
+	$folder = dirname( __FILE__ ) . '/' . $dir . '/'; // Full path to the folder
 
 	// Get all files contained in folder
 	$files	=	scandir( $folder );
