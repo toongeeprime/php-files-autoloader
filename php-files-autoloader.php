@@ -22,7 +22,7 @@ foreach( $directories as $dir ) {
 
 		// Ensure file $path is not a directory and
 		// Check that they have the php extension
-		if ( ! is_dir( $path ) && pathinfo( $path )[ 'extension' ] == 'php' )
+		if ( is_file( $path ) && pathinfo( $path )[ 'extension' ] == 'php' )
 			require_once $path;
 	}
 
