@@ -20,7 +20,7 @@ foreach( $directories as $dir ) {
 	foreach( $files as $file ) {
 		$path = $folder . $file; // Full path to each file
 
-		// Ensure file $path is not a directory and
+		// Verify files
 		// Check that they have the php extension
 		if ( is_file( $path ) && pathinfo( $path )[ 'extension' ] == 'php' )
 			require_once $path;
